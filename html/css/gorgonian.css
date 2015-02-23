@@ -1,0 +1,14 @@
+  #gorgonian {
+    margin: 10px;
+  }
+  #shark_form {
+    padding-top: 10px
+  }
+  .swc_button {
+    position: absolute;
+    top: 0;
+    left: 0;
+  } 
+  #shark {
+    position: relative;
+  }

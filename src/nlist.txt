@@ -1,0 +1,60 @@
+Cell	Trans	Receptors	How Known (trans)	How known (receptors)
+L1	Glu	Hist,Ach,GABA	NeuroSeq	 Gets input from R cells, Ach from L5, GABA from C2
+L2	Ach	Hist,GABA,Ach	NeuroSeq	 Gets input from R cells, GABA from C2, Ach from L5
+L3	Ach	Hist	NeuroSeq	 Gets input from R cells
+L4	Ach	GABA_A,Ach	NeuroSeq	 Transmitters in Fly LaminaAch from TmY11
+L5	Ach	Glu,Ach,GABA	NeuroSeq	 Glu from L1, Ach from L2, GABA from C2
+C2	GABA	GABA_B,Glu,Ach	Transmitters in Fly Lamina(Nassel)Transmitters in Fly Lamina(Nassel), Glu from L1, Ach from L5	
+C3	GABA	GABA_B,Glu,Ach	Transmitters in Fly Lamina(Nassel)Transmitters in Fly Lamina(Nassel), Glu from L1, Ach from L5	
+R7	Hist	Hist	R1-8 use Hist	 Hist from R8
+R8	Hist	Hist	R1-8 use Hist	 Hist from R7
+Dm2	?	Hist,Ach,Glu	Hist from R8, Ach from L5, Glu from Dm8	
+Dm3	Glu	Ach,GABA,Glu	Borst(2011)	 Ach from L3, GABA from C3, Glu from Mi4
+Dm8	Glu	Hist	Hon, et al. 2014	 Gets input from R7
+Dm9	?	Hist,Ach,Glu		Gets input from R7 and R8, Ach from L3, Glu from Dm8
+Dm15	?	Ach,GABA		Ach from L2, GABA from C3
+Dm17	?	Ach,GABA,Glu		Ach from L2, GABA from Tm3, Glu from Mi4
+T1	?	Ach,GABA		Ach from L2, GABA from C3 and C2
+T2	Ach?GABA	Ach,GABA,Glu	Borst(2011)?Borst(2013)	 Ach from L4, GABA from C3, Glu from Pm2
+T3	Glu	Ach,GABA	Borst(2011)	 Ach from Mi1, GABA from Tm3
+T4	Ach	GABA,Ach,Glu	Borst(2011)	 GABA from C3, Ach from Mi1, Glu from Mi4
+T5	Glu?Ach	??	Borst(2011)?Mauss	 Chi-Hon, not out yet
+T2(a)	?	Ach,Glu	Ach from Tm1, Glu from Pm2	
+Tm1	Ach	Ach,GABA,Glu	Borst(2011)	 Ach from L2, GABA from C3, Glu from Pm2
+Tm2	Ach	Ach,Hist,Glu	Borst(2011)	 Ach from L2, L4, Hist since Tm2 is Ort+ (Color Vision, Desplan), Glu Pm2
+Tm3	GABA	Glu,Ach,GABA	Borst(2013)	 Glu from L1, Ach from L5, GABA from Tm3
+Tm4	Ach	Ach,GABA,Glu	Borst(2011)	 Ach from L2, GABA from C3, Glu from Pm2
+Tm5	GABA	?	Borst(2013)	
+Tm6	?	Ach	Ach from L5	
+Tm8	Ach	?	Borst(2011)	
+Tm9	Ach?Glu	Ach,Glu,Hist	Takemura Ach, Borst says Glu, Strasfield GABA (!)	 Ach from L3, Glu from Mi4, Hist from Ort+(Meinertzhagen)
+Tm5(a)	?	Hist,Glu	Hist from R7, Glu from Dm8	
+Tm5(b)	?	Hist,Glu,GABA	Hist from R7, Glu from Dm8, GABA from Mi10	
+Tm5(c)	?	Glu,Ach,Hist	Glu from Dm8 (Hon, et al), Ach from L3, Hist from R8	
+Tm5Y	?	Glu	Glu from Tm20	
+Tm16	?	Glu	Glu from Mi4	
+Tm20	Glu	Ach,Hist,GABA	Borst(2011)	 Ach from L3, Hist from R8, GABA from C3
+Tm25	GABA	Ach	Borst(2013)                       ' Ach from Mi1	 ' Ach from Mi1
+TmY3	?	Glu,Ach,GABA	Ach from L4, Glu from Mi4, GABA from Tm3	
+TmY5	Ach	Ach,GABA,Glu	Borst(2011)	 Ach from Tm4, GABA from Tm3, Glu from Mi4
+TmY9	GABA	Ach	Borst(2013)	 Ach from Mi1
+TmY10	Ach?GABA	Ach,Glu	Borst(2011)?Borst(2013)	 Ach from L3, Glu from Dm8
+TmY11	Ach	GABA,ACh,Glu	Borst(2011)	 GABA from Tm3, Ach from Tm4, Glu from Mi4
+TmY12	Ach	?	Borst(2011)	
+TmY13	GABA	Glu,GABA	Borst(2013)	 Glu from Mi4, GABA from Mi10
+TmY14	?	GABA,Ach	GABA from Tm3, Ach from Tm4	
+Mi1	Ach	Glu,Ach,Hist,GABA	Borst(2011)	 GLU from L1, Ach from L5, Hist from R8, GABA from C2
+Mi2	Ach	Ach	Borst(2011)	 Ach from Mi1
+Mi4	Glu	Ach,Hist,GABA	Borst(2011)	 Ach from L5, Hist from R8, GABA from TmY13
+Mi7	Ach	?	Borst(2011)	
+Mi8	GABA	?	Borst(2013)	
+Mi9	?	Ach,GABA,Glu	Ach from L3, GABA from C3, Glu from Mi4	
+Mi10	GABA	Ach	Borst(2013)	 Ach from Tm4
+Mi11	Ach	?	Borst(2011)	
+Mi14	?	Ach	Ach from Tm4	
+Mi15	?	Ach	Ach from Mi1	
+Pm1	Ach	Ach	Borst(2011)	 Ach from Mi1
+Pm2	Glu	Ach	Borst(2011)	 Ach from Mi1
+Lawf1	?	GABA,Ach	GABA from M10, Ach from M3	
+Lawf2	?	GABA,	Ach	 GABA from Tm3, Ach from Tm1
+Y3	?	Ach,Glu	Ach from Mi1, Glu from Mi4	
