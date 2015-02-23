@@ -15,7 +15,7 @@ $header = generate_header(array( "threejs/three.js", "threejs/TrackballControls.
 $footer = generate_footer();
 
 
-$dvid_server = 'http://emrecon100.janelia.priv/api/node';
+$dvid_server = 'http://hackathon.janelia.org/api/node';
 $uuid = '2a3';
 
 $mode = isset($_GET['mode'])? $_GET['mode']:false;
@@ -47,6 +47,7 @@ if ($swc_file){
 #find swc files located in directory
 $swc_options = json_decode(file_get_contents("$dvid_server/$uuid/bodies/sizerange/1000000/100000000000"));
 asort($swc_options);
+$names_file = json_decode(file_get_contents("$dvid_server/$uuid/gorgonian/em_name_dict.json"), true);
 ?>
 
 <!doctype html>
@@ -63,11 +64,12 @@ asort($swc_options);
 <?php 
 foreach ($swc_options as $swc){
 	$swc = str_replace('.swc', '', $swc); 
+	$swc_name = array_key_exists((string)$swc, $names_file)?$names_file[$swc]:$swc;
 	if ($swc === $swc_file){
-		echo "<option value='$swc' selected=selected >$swc</option>";
+		echo "<option value='$swc' selected=selected >$swc_name</option>";
 	}
 	else{
-		echo "<option value='$swc' >$swc</option>";
+		echo "<option value='$swc' >$swc_name</option>";
 	}
 }
 ?>

@@ -71,12 +71,12 @@ $metadata_file_name = "apache_swc/metadata/em_". $inner_file .".json";
 $count = 0;
 $swc_type_count = 0;
 $swc_combined = "";
-$names_file = file_get_contents('http://emdata1.int.janelia.org/api/node/2a3/gorgonian/em_name_dict.json');
+$names_file = file_get_contents('http://hackathon.janelia.org/api/node/2a3/gorgonian/em_name_dict.json');
 $names_dict = json_decode($names_file, true);
 trigger_error($names_dict);
 $metadata_ar = array();
 foreach($body_arr as $swc_id) {
-	$fn = "http://emdata1.int.janelia.org/api/node/2a3/skeletons/$swc_id.swc";
+	$fn = "http://hackathon.janelia.org/api/node/2a3/skeletons/$swc_id.swc";
 	$swc_data = file_get_contents($fn);
 	$add_ar = add_to_swc($swc_data, $count, $swc_type_count);
 	$name = $names_dict[$swc_id]? $names_dict[$swc_id]:$swc_id;
